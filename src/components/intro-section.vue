@@ -23,8 +23,8 @@ const maxWidth = computed(() => {
     return Math.max(MIN, MAX - (top.value - minTop) * (valuePerScroll * 5));
   }
 
-  if (bottom.value < height.value) {
-    return Math.max(MIN, MAX - (height.value - bottom.value) * valuePerScroll);
+  if (bottom.value < height.value * .75) {
+    return Math.max(MIN, MAX - (height.value * .75 - bottom.value) * valuePerScroll);
   }
 
   return MAX;
@@ -37,9 +37,9 @@ const maxWidth = computed(() => {
            ref="el"
            :style="`--width-size:${maxWidth}%`">
     <div class="full-width-section z-10 text-white">
-      <h2 class="py-40 font-bold text-center text-xl md:text-[4vw]">🙋🏻 Chi sono</h2>
+      <h2 class="py-20 md:py-40 font-bold text-center text-xl md:text-[4vw]">🙋🏻 Chi sono</h2>
       <section v-for="({photo, label, copy}, index) in sections"
-               class="py-40">
+               class="py-20 md:py-40">
         <div class="container">
           <div class="md:row items-center">
             <div :class="['md:col-span-5', {'md:col-start-8': index%2}]">
@@ -68,7 +68,7 @@ const maxWidth = computed(() => {
           </div>
         </div>
       </section>
-      <section class="min-h-[50vh] -mt-40 py-40"/>
+      <section class="md:min-h-[50vh] -mt-2 md:-mt-40 py-20 md:py-40"/>
     </div>
   </section>
 </template>
