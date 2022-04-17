@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #fff;
+  font-size: .8rem;
+  color: #1c1c1c;
+}
+
+.full-width-section{
+  height: 100%;
+  left: 50%;
+  margin-left: -50vw;
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+}
+
+.page-root {
+  @apply min-h-screen grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+p:not(:last-child) {
+  margin-bottom: .5em;
+}
+
+a {
+  --after-content: none;
+  text-decoration: underline;
+  text-underline-position: under;
+
+  &:after {
+    content: var(--after-content);
+  }
+
+  &:not([href^="#"]) {
+    --after-content: " →"
+  }
+
+  &[target="_blank"] {
+    --after-content: " ↗";
+  }
+
+  &[download] {
+    --after-content: " ↓";
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@layer base {
+  .row {
+    @apply grid grid-cols-12 gap-col;
+  }
+}
