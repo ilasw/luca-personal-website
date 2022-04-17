@@ -3,7 +3,7 @@ import {computed, ref} from "vue";
 import {useElementBounding, useWindowSize} from '@vueuse/core'
 
 const {sections} = defineProps<{
-  sections: { photo: string, label: string }[],
+  sections: { photo: string, label: string, copy: string }[],
 }>();
 
 const [MIN, MAX] = [50, 100]
