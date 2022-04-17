@@ -37,7 +37,7 @@ const maxWidth = computed(() => {
            ref="el"
            :style="`--width-size:${maxWidth}%`">
     <div class="full-width-section z-10 text-white">
-      <h2 class="py-20 md:py-40 font-bold text-center text-xl md:text-[4vw]">🙋🏻 Chi sono</h2>
+      <h2 class="py-20 md:py-40 font-bold text-center text-2xl md:text-[4vw]">🙋🏻 Chi sono</h2>
       <section v-for="({photo, label, copy}, index) in sections"
                class="py-20 md:py-40">
         <div class="container">

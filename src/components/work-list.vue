@@ -26,7 +26,7 @@ const headingSize = computed(() => {
       <div class="relative md:sticky md:top-0 min-h-screen grid items-center pointer-events-none">
         <h2 class="heading sticky top-16 md:static"
             :style="`--heading-font-size: ${headingSize}px;`"
-        >👨🏻‍💻 Esperienze</h2>
+        >👨🏻‍💻 <span class="block md:inline">Esperienze</span></h2>
       </div>
       <div class="md:row">
         <div class="md:col-span-8 md:col-start-5">
