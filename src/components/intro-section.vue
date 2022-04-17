@@ -2,9 +2,8 @@
 import {computed, ref} from "vue";
 import {useElementBounding, useWindowSize} from '@vueuse/core'
 
-const {sections, talks} = defineProps<{
-  sections: { photo: string, label: string, copy: string }[],
-  talks: { what: string, where: string, when: string, copy: string, cta: { label: string, href: string } }
+const {sections} = defineProps<{
+  sections: { photo: string, label: string, copy: string }[]
 }>();
 
 const [MIN, MAX] = [50, 100]
