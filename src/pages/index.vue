@@ -3,6 +3,7 @@ import {useHead} from "@vueuse/head";
 import staticData from '@/_data/home-page';
 import HeroHeader from "@/components/hero-header.vue";
 import IntroSection from "@/components/intro-section.vue";
+import Footer from "@/components/footer.vue";
 import WorkList from "@/components/work-list.vue";
 
 useHead({
@@ -22,12 +23,7 @@ const data = staticData;
   <HeroHeader v-bind="data.hero"/>
   <IntroSection v-bind="data.about"/>
   <WorkList :works="data.resume.work"/>
-
-  <footer>
-    <div class="container">
-      Footer & CTAs
-    </div>
-  </footer>
+  <Footer />
 </template>
 
 <style scoped>

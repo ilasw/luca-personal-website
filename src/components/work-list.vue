@@ -23,7 +23,7 @@ const headingSize = computed(() => {
 <template>
   <section class="relative z-10" ref="el">
     <div class="container relative">
-      <div class="md:sticky top-0 min-h-screen grid items-center">
+      <div class="md:sticky top-0 min-h-screen grid items-center pointer-events-none">
         <h2 class="heading"
             :style="`--heading-font-size: ${headingSize}px;`"
         >👨🏻‍💻 Esperienze</h2>

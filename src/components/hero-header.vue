@@ -25,9 +25,9 @@ const {heading, motto, copy, ctas} = defineProps<{
     <div class="container">
       <div class="min-h-[90vh] grid place-items-center text-center">
         <div>
-          <h1 class="text-5xl font-bold">{{ heading }}</h1>
+          <h1 class="text-5xl md:text-7xl font-bold my-4">{{ heading }}</h1>
           <h2 class="text-lg" v-html="motto" />
-          <p class="text-xs">{{ copy }}</p>
+          <p class="text-sm">{{ copy }}</p>
           <div class="cta-wrapper mt-3"
                v-if="ctas?.length">
             <template v-for="cta in ctas">
