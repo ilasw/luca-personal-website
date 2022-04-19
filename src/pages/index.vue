@@ -19,7 +19,7 @@ useHead({
     {name: `description`, property: `og:description`, content: description},
     {name: 'image', property: `og:image`, content: photoWordcamp},
     {name: `og:type`, content: 'website'},
-    {name: 'autor', content: 'Luca Pagliaro'}
+    {name: 'author', content: 'Luca Pagliaro'}
   ],
 })
 const data = staticData;
