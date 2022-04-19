@@ -15,9 +15,8 @@ const [title, description] = [
 useHead({
   title,
   meta: [
-    {name: `og:title`, content: title},
-    {name: `og:description`, content: description},
-    {name: `description`, content: description},
+    {name: 'title', property: `og:title`, content: title},
+    {name: `description`, property: `og:description`, content: description},
     {name: 'image', property: `og:image`, content: photoWordcamp},
     {name: `og:type`, content: 'website'},
   ],
