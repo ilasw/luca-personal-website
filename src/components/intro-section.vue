@@ -64,8 +64,9 @@ const maxWidth = computed(() => {
               <picture class="block my-10 mx-auto">
                 <img :alt="`Luca Pagliaro - ${label}`"
                      class="w-full"
-                     width="400"
                      height="400"
+                     loading="lazy"
+                     width="400"
                      :src="photo">
               </picture>
             </div>
