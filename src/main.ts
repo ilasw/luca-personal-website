@@ -7,6 +7,6 @@ export const createApp = ViteSSG(App, (ctx) => {
   ctx.app.use(MotionPlugin);
 
   ctx.app.use(VueGtag, {
-    config: {id: 'UA-28358707-9'}
+    config: {id: 'GTM-WQXMBWR'}
   })
 })
