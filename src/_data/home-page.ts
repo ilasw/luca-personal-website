@@ -69,7 +69,7 @@ export default {
         what: 'Senior front-end developer',
         when: '2022 - Oggi',
         where: 'Freelancer',
-        copy: ``,
+        copy: `Consulente per lo sviluppo front-end di progetti complessi.`,
         stackImg: `https://skillicons.dev/icons?i=typescript,angular,react,vue,wordpress`
       },
       {
@@ -89,7 +89,7 @@ export default {
       {
         what: 'Senior front-end developer',
         when: '2027 - 2019',
-        where: 'Freelancer',
+        where: 'Motorsquare',
         copy: `Sviluppato e mantenuto le web application in Angular e Vue della startup, applicando tutte le buone regole dello sviluppo web come client-side cache (anche tramite database in browser), skeleton, accessibilità.`,
         stackImg: `https://skillicons.dev/icons?i=sass,javascript,typescript,angular,vue,electron&perline=3`
       },
