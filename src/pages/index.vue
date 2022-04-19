@@ -18,7 +18,7 @@ useHead({
     {name: `og:title`, content: title},
     {name: `og:description`, content: description},
     {name: `description`, content: description},
-    {property: `og:image`, content: photoWordcamp},
+    {name: 'image', property: `og:image`, content: photoWordcamp},
     {name: `og:type`, content: 'website'},
   ],
 })
