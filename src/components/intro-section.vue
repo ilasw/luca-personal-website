@@ -13,6 +13,8 @@ const {height} = useWindowSize();
 
 const animationFragmentHeight = computed(() => height.value / 10);
 const maxWidth = computed(() => {
+  if (!el?.value) return MIN;
+
   const maxTop = height.value + animationFragmentHeight.value;
   const minTop = height.value - animationFragmentHeight.value * 3;
   const valuePerScroll = MIN / height.value;
@@ -60,8 +62,10 @@ const maxWidth = computed(() => {
             </div>
             <div :class="['md:col-span-5 md:row-start-1', {'md:col-start-8': !(index%2)}]">
               <picture class="block my-10 mx-auto">
-                <img alt="Luca Pagliaro"
+                <img :alt="`Luca Pagliaro - ${label}`"
                      class="w-full"
+                     width="400"
+                     height="400"
                      :src="photo">
               </picture>
             </div>

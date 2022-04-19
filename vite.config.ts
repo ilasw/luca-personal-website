@@ -12,6 +12,9 @@ export default defineConfig({
     vue(),
     ViteImages({
       dirs: ['src/assets'],
+      extensions: ['jpg', 'jpeg', 'png', 'svg'],
+      customResolvers: [],
+      customSearchRegex: '([A-Z][a-zA-Z0-9]+)',
     })
   ],
   resolve: {
