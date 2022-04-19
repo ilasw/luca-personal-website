@@ -105,7 +105,7 @@ export default {
         when: '2015',
         where: 'Newmediabit',
         copy: `Impegnato nel rifacimento del portale LovePedia con l’obbiettivo di ridisegnare la UI della piattaforma e di svilupparla in toto.`,
-        stackImg: `https://skillicons.dev/icons?i=javascript,sass,jquery,php`
+        stackImg: `https://skillicons.dev/icons?i=sass,javascript,jquery,php`
       },
       {
         what: 'WordPress developer',
