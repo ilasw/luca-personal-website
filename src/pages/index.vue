@@ -18,7 +18,7 @@ useHead({
     {name: 'title', property: `og:title`, content: title},
     {name: `description`, property: `og:description`, content: description},
     {name: 'image', property: `og:image`, content: photoWordcamp},
-    {name: `og:type`, content: 'website'},
+    {property: 'og:type', content: 'website'},
     {name: 'author', content: 'Luca Pagliaro'}
   ],
 })
