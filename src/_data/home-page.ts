@@ -88,7 +88,7 @@ export default {
       },
       {
         what: 'Senior front-end developer',
-        when: '2027 - 2019',
+        when: '2017 - 2019',
         where: 'Motorsquare',
         copy: `Sviluppato e mantenuto le web application in Angular e Vue della startup, applicando tutte le buone regole dello sviluppo web come client-side cache (anche tramite database in browser), skeleton, accessibilità.`,
         stackImg: `https://skillicons.dev/icons?i=sass,javascript,typescript,angular,vue,electron&perline=3`
