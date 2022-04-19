@@ -34,6 +34,7 @@ const {heading, motto, copy, ctas} = defineProps<{
               <CtaButton as="link"
                          class="mr-4"
                          target="_blank"
+                         rel="noopener noreferrer"
                          :href="cta.href"
               ><span>{{ cta.label }}</span></CtaButton>
             </template>

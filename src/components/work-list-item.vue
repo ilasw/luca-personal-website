@@ -22,7 +22,7 @@ const {what, when, where, copy, stackImg} = defineProps<WorkListItem>();
     <div class="copy">{{ copy }}</div>
     <picture v-if="stackImg?.length"
              class="block my-4"><img :src="`${stackImg}`"
-                                     alt=""
+                                     :alt="`stack usato in ${where}`"
                                      loading="lazy"
     ></picture>
   </div>
