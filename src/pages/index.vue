@@ -7,18 +7,19 @@ import Footer from "@/components/footer.vue";
 import WorkList from "@/components/work-list.vue";
 import photoWordcamp from "@/assets/luca-wordcamp-2019.jpeg";
 
+const [title, description] = [
+  'Luca Pagliaro | Senior front-end developer in Catania',
+  `Specialista nello sviluppo su stack JavaScript / TypeScript, su WordPress, ed in generale di siti usabili ed accessibili`
+];
 
 useHead({
-  title: 'Luca Pagliaro | Senior front-end developer in Catania',
+  title,
   meta: [
-    {
-      name: `description`,
-      content: `Specialista nello sviluppo su stack JavaScript / TypeScript, su WordPress, ed in generale di siti usabili ed accessibili`,
-    },
-    {
-      property: `og:image`,
-      content: photoWordcamp,
-    },
+    {name: `og:title`, content: title},
+    {name: `og:description`, content: description},
+    {name: `description`, content: description},
+    {property: `og:image`, content: photoWordcamp},
+    {name: `og:type`, content: 'website'},
   ],
 })
 const data = staticData;
