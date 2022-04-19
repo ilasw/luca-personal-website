@@ -1,10 +1,11 @@
 import {ViteSSG} from 'vite-ssg/single-page'
-import App from './App.vue'
+import VueGtag from "vue-gtag";
 import {MotionPlugin} from "@vueuse/motion";
+import App from './App.vue'
 
 export const createApp = ViteSSG(App, (ctx) => {
-  ctx.app.use(MotionPlugin)
+  ctx.app.use(MotionPlugin);
+  ctx.app.use(VueGtag, {
+    config: {id: "UA-28358707-9"}
+  })
 })
-
-// import {createApp} from "vue";
-// createApp(App).mount('#app');
