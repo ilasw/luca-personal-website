@@ -97,7 +97,7 @@ export default {
         what: 'Founder & CTO',
         when: '2015 - 2017',
         where: 'HereToday',
-        copy: `Mi sono occupato di sviluppatore landing, piattaforma web e mobile tramite tecnologia cross-platform, un algoritmo di scraping per le principali piattaforme di recensioni sul food che riuscisse tramite algoritmo di NLP a comprendere quali aspetti di un locale piacevano ai clienti.`,
+        copy: `Mi sono occupato di sviluppare landing, piattaforma web e mobile tramite tecnologia cross-platform, un algoritmo di scraping per le principali piattaforme di recensioni sul food che riuscisse tramite algoritmo di NLP a comprendere quali aspetti di un locale piacevano ai clienti.`,
         stackImg: `https://skillicons.dev/icons?i=sass,javascript,angular,nodejs,mongodb,azure&perline=3`
       },
       {
