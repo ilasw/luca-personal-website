@@ -3,5 +3,6 @@ import './styles/main.css';
 </script>
 
 <template>
-  <NuxtPage />
+  <Html lang="it"/>
+  <NuxtPage/>
 </template>

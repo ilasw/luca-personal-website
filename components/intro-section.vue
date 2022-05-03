@@ -45,11 +45,11 @@ const maxWidth = computed(() => {
         <div class="container">
           <div class="md:row items-center">
             <div :class="['md:col-span-5', {'md:col-start-8': index%2}]">
-              <h4 class="text-neutral-400"
+              <span class="text-neutral-400"
                   v-motion
                   :initial="{y: -10, x: -10, opacity: 0}"
                   :visible="{y:0, x:0, opacity:1, transition: { delay: 100} }"
-              >{{ label }}</h4>
+              >{{ label }}</span>
               <h3 class="text-xl leading-[1.1] md:text-2xl">
                 <template v-for="(word, count) in copy.split(' ')">
               <span class="inline-block"
