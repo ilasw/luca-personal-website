@@ -14,10 +14,10 @@ const {what, when, where, copy, stackImg} = defineProps<WorkListItem>();
 <template>
   <div class="WorkListItem"
        role="listitem">
-    <h4 class="text-gray-500 my-0 text-[.7rem]">
+    <div class="text-gray-500 my-0 text-[.7rem]">
       <span class="place">{{ where }}</span> –
       <time>{{ when }}</time>
-    </h4>
+    </div>
     <h3 class="text-lg font-bold mt-0 mb-1">{{ what }}</h3>
     <div class="copy">{{ copy }}</div>
     <picture v-if="stackImg?.length"
