@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import {useHead} from "@vueuse/head";
 import staticData from '@/_data/home-page';
 import HeroHeader from "@/components/hero-header.vue";
 import IntroSection from "@/components/intro-section.vue";
@@ -26,7 +25,6 @@ const data = staticData;
 </script>
 
 <template>
-
   <HeroHeader v-bind="data.hero"/>
   <IntroSection v-bind="data.about"/>
   <WorkList :works="data.resume.work"/>

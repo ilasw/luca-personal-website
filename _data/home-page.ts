@@ -1,5 +1,5 @@
-import photoWordcamp from "@/assets/luca-wordcamp-2019.jpeg";
-import photoEvent from "@/assets/luca-event.png";
+import photoWordcamp from "~/assets/luca-wordcamp-2019.jpeg";
+import photoEvent from "~/assets/luca-event.png";
 
 export default {
   hero: {
