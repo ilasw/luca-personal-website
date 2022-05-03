@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 type WorkListItem = {
   where: string,
   when: string,

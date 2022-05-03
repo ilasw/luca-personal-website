@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import CtaButton from "@/atoms/cta-button.vue";
-
 const {heading, motto, copy, ctas} = defineProps<{
   heading: string,
   motto: string,

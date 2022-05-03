@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import WorkListItem from "@/components/work-list-item.vue";
 import {computed, ref} from "vue";
 import {useElementBounding, useWindowSize} from "@vueuse/core";
 
@@ -13,13 +12,10 @@ const headingSize = computed(() => {
   const MIN_SIZE = Math.max(25, width.value / 30);
   const MAX_SIZE = (width.value / 10);
 
-  if (!top) return MAX_SIZE;
-
   if (top.value <= (height.value * -1)) return MIN_SIZE;
 
   return MIN_SIZE + Math.min(MAX_SIZE, MAX_SIZE * ((top.value + height.value) / height.value));
 });
-
 </script>
 
 <template>
