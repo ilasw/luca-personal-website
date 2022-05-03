@@ -1,7 +1,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./**/*.{vue,js,ts,jsx,tsx}",
+    "./**/*.{vue,tsx}",
   ],
   theme: {
     container: {center: true},

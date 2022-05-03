@@ -1,6 +1,4 @@
-import {defineNuxtConfig} from 'nuxt'
-
-export default defineNuxtConfig({
+export default {
   build: {
     postcss: {
       postcssOptions: {
@@ -14,4 +12,4 @@ export default defineNuxtConfig({
       },
     },
   }
-})
+}
