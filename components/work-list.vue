@@ -13,6 +13,8 @@ const headingSize = computed(() => {
   const MIN_SIZE = Math.max(25, width.value / 30);
   const MAX_SIZE = (width.value / 10);
 
+  if (!top) return MAX_SIZE;
+
   if (top.value <= (height.value * -1)) return MIN_SIZE;
 
   return MIN_SIZE + Math.min(MAX_SIZE, MAX_SIZE * ((top.value + height.value) / height.value));
@@ -24,9 +26,12 @@ const headingSize = computed(() => {
   <section class="relative z-10 md:mt-20" ref="el">
     <div class="container relative">
       <div class="relative md:sticky md:top-0 min-h-screen grid items-center pointer-events-none">
-        <h2 class="heading sticky top-16 md:static"
-            :style="`--heading-font-size: ${headingSize}px;`"
-        >👨🏻‍💻 <span class="block md:inline">Esperienze</span></h2>
+        <ClientOnly>
+          <h2 class="heading sticky top-16 md:static"
+              :style="`--heading-font-size: ${headingSize||32}px;`"
+          >👨🏻‍💻 <span class="block md:inline">Esperienze</span></h2>
+          <template #fallback>👨🏻‍💻 Esperienze</template>
+        </ClientOnly>
       </div>
       <div class="md:row">
         <div class="md:col-span-8 md:col-start-5">
