@@ -10,7 +10,7 @@
             <h3 class="text-xl font-bold mb-2">💬 Let's talk</h3>
             <p class="max-w-[80%]">Puoi entrare in contatto su <a href="https://www.linkedin.com/in/lucapagliaro/"
                                               target="_blank" rel="noopener">LinkedIn</a> o tramite email a <a
-                href="mailto:hello@lucapagliaro.it"
+                href="mailto:pagliaroluca+website@gmail.com"
             >questo indirizzo</a>.</p>
           </div>
           <div class="md:col-span-8 lg:col-span-4">

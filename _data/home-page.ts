@@ -9,7 +9,7 @@ export default {
     ctas: [
       {label: 'LinkedIn', href: 'https://www.linkedin.com/in/lucapagliaro/'},
       {label: 'Blog', href: 'https://ilasw.medium.com/'},
-      {label: 'Scrivimi', href: 'mailto:hello@lucapagliaro.it'},
+      {label: 'Scrivimi', href: 'mailto:pagliaroluca+website@gmail.com'},
     ]
   },
   about: {
