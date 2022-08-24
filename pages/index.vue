@@ -32,5 +32,5 @@ const data = computed(() => staticData[appContext.app.i18n.locale])
   <HeroHeader v-bind="data.hero"/>
   <IntroSection v-bind="data.about"/>
   <WorkList v-bind="data.resume"/>
-  <Footer/>
+  <Footer v-bind="data.footer"/>
 </template>

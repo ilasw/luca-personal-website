@@ -123,7 +123,22 @@ Various WordPress themes (custom) and plugins (ex: TypeForm integration).
           stackImg: `https://skillicons.dev/icons?i=javascript,php,wordpress`
         }
       ]
+    },
+    footer: {
+      heading: 'Contacts',
+      contact: {
+        heading: `💬 Let's talk`,
+        text: `You can contact me on <a href="https://www.linkedin.com/in/lucapagliaro/"
+                                              target="_blank" rel="noopener">LinkedIn</a> or via email at <a
+                href="mailto:pagliaroluca+website@gmail.com"
+            >this address</a>.`
+      },
+      work: {
+        heading: '💻 Looking for a dev?',
+        text: `If yor are looking for a collaborator just email me for a free quote.`
+      }
     }
+
   },
   it: {
     hero: {
@@ -241,6 +256,20 @@ Various WordPress themes (custom) and plugins (ex: TypeForm integration).
           stackImg: `https://skillicons.dev/icons?i=javascript,php,wordpress`
         }
       ]
+    },
+    footer: {
+      heading: 'Contatti',
+      contact: {
+        heading: `💬 Let's talk`,
+        text: `Puoi entrare in contatto su <a href="https://www.linkedin.com/in/lucapagliaro/"
+                                              target="_blank" rel="noopener">LinkedIn</a> o tramite email a <a
+                href="mailto:pagliaroluca+website@gmail.com"
+            >questo indirizzo</a>.`
+      },
+      work: {
+        heading: '💻 Cerchi un dev?',
+        text: `Se hai un progetto da proporre e stai cercando chi può svilupparlo contattami per un preventivo gratuito.`
+      }
     }
   }
 }
