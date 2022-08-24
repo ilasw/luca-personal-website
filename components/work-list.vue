@@ -2,7 +2,7 @@
 import {computed, ref} from "vue";
 import {useElementBounding, useWindowSize} from "@vueuse/core";
 
-const {works = []} = defineProps<{ works: any[] }>();
+const {title = '', works = []} = defineProps<{ works: any[], title: string }>();
 
 const el = ref<HTMLElement | null>(null);
 const {top} = useElementBounding(el)
@@ -25,8 +25,8 @@ const headingSize = computed(() => {
         <ClientOnly>
           <h2 class="heading sticky top-16 md:static"
               :style="`--heading-font-size: ${headingSize||32}px;`"
-          >👨🏻‍💻 <span class="block md:inline">Esperienze</span></h2>
-          <template #fallback>👨🏻‍💻 Esperienze</template>
+          >👨🏻‍💻 <span class="block md:inline">{{ title }}</span></h2>
+          <template #fallback>👨🏻‍💻 {{ title }}</template>
         </ClientOnly>
       </div>
       <div class="md:row">

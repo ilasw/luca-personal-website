@@ -5,7 +5,9 @@ import IntroSection from "@/components/intro-section.vue";
 import Footer from "@/components/footer.vue";
 import WorkList from "@/components/work-list.vue";
 import photoWordcamp from "@/assets/luca-wordcamp-2019.jpeg";
+import {computed, getCurrentInstance} from "vue";
 
+const {appContext} = getCurrentInstance();
 const [title, description] = [
   'Luca Pagliaro | Senior front-end developer in Catania',
   `Specialista nello sviluppo su stack JavaScript / TypeScript, su WordPress, ed in generale di siti usabili ed accessibili`
@@ -21,12 +23,14 @@ useHead({
     {name: 'author', content: 'Luca Pagliaro'}
   ],
 })
-const data = staticData;
+
+// const {lang} = useI18n();
+const data = computed(() => staticData[appContext.app.i18n.locale])
 </script>
 
 <template>
   <HeroHeader v-bind="data.hero"/>
   <IntroSection v-bind="data.about"/>
-  <WorkList :works="data.resume.work"/>
+  <WorkList v-bind="data.resume"/>
   <Footer/>
 </template>

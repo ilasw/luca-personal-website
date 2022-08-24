@@ -2,7 +2,8 @@
 import {computed, ref} from "vue";
 import {useElementBounding, useWindowSize} from '@vueuse/core'
 
-const {sections} = defineProps<{
+const {sections, title} = defineProps<{
+  title: string,
   sections: { photo: string, label: string, copy: string }[]
 }>();
 
@@ -39,16 +40,16 @@ const maxWidth = computed(() => {
            ref="el"
            :style="`--width-size:${maxWidth}%`">
     <div class="full-width-section z-10 text-white">
-      <h2 class="py-20 md:py-40 font-bold text-center text-2xl md:text-[4vw]">🙋🏻 Chi sono</h2>
+      <h2 class="py-20 md:py-40 font-bold text-center text-2xl md:text-[4vw]">🙋🏻 {{ title }}</h2>
       <section v-for="({photo, label, copy}, index) in sections"
                class="py-20 md:py-40">
         <div class="container">
           <div class="md:row items-center">
             <div :class="['md:col-span-5', {'md:col-start-8': index%2}]">
               <span class="text-neutral-400"
-                  v-motion
-                  :initial="{y: -10, x: -10, opacity: 0}"
-                  :visible="{y:0, x:0, opacity:1, transition: { delay: 100} }"
+                    v-motion
+                    :initial="{y: -10, x: -10, opacity: 0}"
+                    :visible="{y:0, x:0, opacity:1, transition: { delay: 100} }"
               >{{ label }}</span>
               <h3 class="text-xl leading-[1.1] md:text-2xl">
                 <template v-for="(word, count) in copy.split(' ')">

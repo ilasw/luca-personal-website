@@ -3,6 +3,6 @@ import './styles/main.css';
 </script>
 
 <template>
-  <Html lang="it"/>
+  <Html :lang="$i18n.locale??'it'"/>
   <NuxtPage/>
 </template>
