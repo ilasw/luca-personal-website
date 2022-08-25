@@ -3,7 +3,7 @@ const {
   heading,
   work,
   contact
-} = defineProps<{ heading: string, work: { text: string }, contact: { text: string } }>();
+} = defineProps<{ heading: string, work: { heading: string, text: string }, contact: { heading: string, text: string } }>();
 console.log({heading, work, contact});
 </script>
 
@@ -16,11 +16,11 @@ console.log({heading, work, contact});
             <h2 class="text-3xl font-bold">{{ heading }}</h2>
           </div>
           <div class="md:col-span-8 lg:col-span-4 mb-8">
-            <h3 class="text-xl font-bold mb-2">💬 Let's talk</h3>
+            <h3 class="text-xl font-bold mb-2">{{ contact.heading }}</h3>
             <p class="max-w-[80%]" v-html="contact.text"/>
           </div>
           <div class="md:col-span-8 lg:col-span-4">
-            <h3 class="text-xl font-bold mb-2">💻 Cerchi uno sviluppatore?</h3>
+            <h3 class="text-xl font-bold mb-2">{{ work.heading }}</h3>
             <p class="max-w-[80%]" v-html="work.text"/>
           </div>
         </div>
