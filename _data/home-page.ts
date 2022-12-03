@@ -5,10 +5,14 @@ import photoEvent from "~/assets/luca-event.png";
 
 export default {
   en: {
+    seo: {
+      title: 'Luca Pagliaro | Senior front-end developer',
+      description: `Senior web developer, with a deep knowledge of JavaScript/TypeScript stack (Angular/React/Vue), WordPress (PHP), ed accessibility.`
+    },
     hero: {
       heading: 'Luca Pagliaro',
-      motto: '<i>A responsable</i> senior front-end developer',
-      copy: '💼 Freelancer, available for projects',
+      motto: '<i>A conscious</i> senior front-end developer',
+      copy: '💼 Consultant, available for projects',
       ctas: [
         {label: 'LinkedIn', href: 'https://www.linkedin.com/in/lucapagliaro/'},
         {label: 'Mail me', href: 'mailto:pagliaroluca+website@gmail.com'},
@@ -74,16 +78,16 @@ export default {
           when: '2021 - today',
           where: 'Opinno/Edgemony/Start2Impact',
           copy: `Teacher and coach for many companies, tutoring people with different backgrounds with the aim of training front-end developers able to build interfaces.`,
-          stackImg: `https://skillicons.dev/icons?i=javascript,react,vue`
+          stackImg: `https://skillicons.dev/icons?i=javascript,react,vue,angular`
         },
         {
           what: 'Senior front-end developer',
           when: '2022 - Today',
-          where: 'Freelancer',
-          copy: `Currently working as a freelance senior developer. Projects that i worked on:
-E-commerce front-end with React / Next.js / TypeScript;
-Travel related web application, with complex search, in Angular / TypeScript / RxJS;
-Various WordPress themes (custom) and plugins (ex: TypeForm integration).
+          where: 'Sentiero.digital',
+          copy: `Currently working as a consultant senior developer. Projects that I worked on:<br />
+• E-commerce front-end with React / Next.js / TypeScript;<br />
+• Travel related web application, with complex search, in Angular / TypeScript / RxJS;<br />
+• Various WordPress themes (custom) and plugins (ex: TypeForm integration).
 `,
           stackImg: `https://skillicons.dev/icons?i=typescript,angular,react,vue,wordpress`
         },
@@ -141,10 +145,14 @@ Various WordPress themes (custom) and plugins (ex: TypeForm integration).
 
   },
   it: {
+    seo: {
+      title: 'Luca Pagliaro | Senior front-end developer',
+      description: `Sviluppatore web, con conoscenza approfondita dello stack JavaScript/TypeScript (Angular/React/Vue), WordPress, e dello sviluppo accessibile.`
+    },
     hero: {
       heading: 'Luca Pagliaro',
       motto: 'Senior front-end developer <i>responsabile</i>',
-      copy: '💼 Freelancer, disponibile per collaborazioni',
+      copy: '💼 Consulente, disponibile per collaborazioni',
       ctas: [
         {label: 'LinkedIn', href: 'https://www.linkedin.com/in/lucapagliaro/'},
         {label: 'Blog', href: 'https://ilasw.medium.com/'},
@@ -157,7 +165,7 @@ Various WordPress themes (custom) and plugins (ex: TypeForm integration).
         {
           photo: `https://skillicons.dev/icons?i=html,css,javascript,typescript,tailwind,react,vue,angular,nodejs,php,wordpress,graphql&theme=light&perline=4`,
           label: `Cosa faccio`,
-          copy: `Sono uno specialista nello sviluppo su stack JavaScript / TypeScript, su WordPress, ed in generale di siti usabili ed accessibili.`
+          copy: `Ho una conoscenza approfondita dello stack JavaScript/TypeScript (Angular/React/Vue), WordPress, e dello sviluppo accessibile`
         },
         {
           photo: photoEvent,
@@ -209,9 +217,20 @@ Various WordPress themes (custom) and plugins (ex: TypeForm integration).
         {
           what: 'Senior front-end developer',
           when: '2022 - Oggi',
-          where: 'Freelancer',
-          copy: `Consulente per lo sviluppo front-end di progetti complessi.`,
+          where: 'Sentiero.digital',
+          copy: `Lavoro come consulente per lo sviluppo front-end sulle più recenti tecnologie web.
+Esempi di progetti lavorati:</br>
+• E-commerce e Dashboards in React / Next.js / TypeScript;</br>
+• Funzionalità di ricerca per sito di viaggi in Angular / TypeScript / RxJS;</br>
+• Sviluppo di temi (custom) e plugin (es: integrazione con TypeForm) in WordPress.`,
           stackImg: `https://skillicons.dev/icons?i=typescript,angular,react,vue,wordpress`
+        },
+        {
+          what: 'Docente JavaScript/React',
+          when: '2021 - Oggi',
+          where: 'Edgemony/Start2Impact/Opinno',
+          copy: `Docente e coach per diverse aziende. Seguo classi con diversi background nei loro primi passi con JavaScript, React, Vue ed Angular. `,
+          stackImg: `https://skillicons.dev/icons?i=javascript,react,angular,vue`
         },
         {
           what: 'Lead Web Developer',
@@ -219,13 +238,6 @@ Various WordPress themes (custom) and plugins (ex: TypeForm integration).
           where: 'The Wave Studio',
           copy: `Operativo sui progetti a più alto impatto dell’agenzia e manager del team web. Ho gestito la code-review, la formazione tecnica, il budget ed il processo di recruiting.`,
           stackImg: `https://skillicons.dev/icons?i=typescript,angular,vue,react,wordpress,laravel,nodejs,graphql&perline=4`
-        },
-        {
-          what: 'Docente JavaScript/React',
-          when: '2021',
-          where: 'Tree/Opinno',
-          copy: `Docente per una classe di 15 persone con l’obiettivo di formare developer in grado di sviluppare con JavaScript e React. `,
-          stackImg: `https://skillicons.dev/icons?i=javascript,react`
         },
         {
           what: 'Senior front-end developer',

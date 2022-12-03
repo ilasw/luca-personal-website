@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import staticData from '@/_data/home-page';
+import Footer from "@/components/footer.vue";
 import HeroHeader from "@/components/hero-header.vue";
 import IntroSection from "@/components/intro-section.vue";
-import Footer from "@/components/footer.vue";
 import WorkList from "@/components/work-list.vue";
 import photoWordcamp from "@/assets/luca-wordcamp-2019.jpeg";
-import {computed, getCurrentInstance} from "vue";
+import staticData from '@/_data/home-page';
+import {computed} from "vue";
+import {useI18n} from "vue-i18n";
 
 const {appContext} = getCurrentInstance();
 const [title, description] = [
@@ -24,8 +25,8 @@ useHead({
   ],
 })
 
-// const {lang} = useI18n();
-const data = computed(() => staticData[appContext.app.i18n.locale])
+const {locale} = useI18n();
+const data = computed(() => staticData?.[locale.value] ?? staticData.it);
 </script>
 
 <template>
