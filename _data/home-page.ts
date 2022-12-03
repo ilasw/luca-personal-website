@@ -226,10 +226,10 @@ Esempi di progetti lavorati:</br>
           stackImg: `https://skillicons.dev/icons?i=typescript,angular,react,vue,wordpress`
         },
         {
-          what: 'Docente JavaScript/React',
+          what: 'Docente front-end',
           when: '2021 - Oggi',
           where: 'Edgemony/Start2Impact/Opinno',
-          copy: `Docente e coach per diverse aziende. Seguo classi con diversi background nei loro primi passi con JavaScript, React, Vue ed Angular. `,
+          copy: `Docente e coach per diverse aziende.<br>Seguo classi con diversi background nei loro primi passi con JavaScript, React, Vue ed Angular. `,
           stackImg: `https://skillicons.dev/icons?i=javascript,react,angular,vue`
         },
         {
