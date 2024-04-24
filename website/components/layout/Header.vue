@@ -3,8 +3,8 @@
 import {useToggle} from "@vueuse/core";
 
 const items = [
-  {label: "Resume", url: "/"},
-  {label: "Services", url: "/about"},
+  {label: "Services", url: "/services"},
+  {label: "Resume", url: "/resume/luca-pagliaro-resume.pdf", target: "_blank"},
   {label: "Blog", url: "https://blog.sentiero.digital", target: "_blank"},
 ];
 
@@ -16,7 +16,7 @@ const id = useId();
   <header class="sticky top-0 left-0 w-full bg-white py-2.5 border-b border-b-neutral-100">
     <div class="container">
       <div class="flex items-center justify-end md:justify-between">
-        <div class="hidden md:bock">
+        <div class="hidden md:block">
           <RouterLink class="link text-lg font-bold" to="/">
             Luca Pagliaro
           </RouterLink>
@@ -27,7 +27,7 @@ const id = useId();
                     :aria-controls="`menu-${id}`"
                     :aria-expanded="isOpen"
                     @click.prevent="toggle()"
-            >{{ isOpen ? '⨉' : 'Menu'}}</button>
+            >{{ isOpen ? 'Close ⨉' : 'Menu'}}</button>
           </div>
           <ul :id="`menu-${id}`"
               :aria-hidden="!isOpen"
