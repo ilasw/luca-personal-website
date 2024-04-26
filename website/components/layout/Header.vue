@@ -1,12 +1,10 @@
 <script setup lang="ts">
 
 import {useToggle} from "@vueuse/core";
+import {useLocale} from "~/hooks/useLocale";
 
-const items = [
-  {label: "Services", url: "/services"},
-  {label: "Resume", url: "/resume/luca-pagliaro-resume.pdf", target: "_blank"},
-  {label: "Blog", url: "https://blog.sentiero.digital", target: "_blank"},
-];
+const {t} = useLocale();
+const items = t<Array<Record<'href' | 'label' | 'target', string>>>('header.links');
 
 const [isOpen, toggle] = useToggle(false);
 const id = useId();
@@ -17,7 +15,7 @@ const id = useId();
     <div class="container">
       <div class="flex items-center justify-end md:justify-between">
         <div class="hidden md:block">
-          <RouterLink class="link text-lg font-bold" to="/">
+          <RouterLink class="link text-lg font-medium" to="/">
             Luca Pagliaro
           </RouterLink>
         </div>
@@ -27,7 +25,7 @@ const id = useId();
                     :aria-controls="`menu-${id}`"
                     :aria-expanded="isOpen"
                     @click.prevent="toggle()"
-            >{{ isOpen ? 'Close ⨉' : 'Menu'}}</button>
+            >{{ isOpen ? 'Close ⨉' : 'Menu' }}</button>
           </div>
           <ul :id="`menu-${id}`"
               :aria-hidden="!isOpen"
@@ -35,9 +33,9 @@ const id = useId();
           >
             <li v-for="item in items">
               <component class="link"
-                         :is="item.url.startsWith('/') ? 'RouterLink' : 'a'"
-                         :href="item.url"
-                         :to="item.url"
+                         :is="item.href.startsWith('/') ? 'RouterLink' : 'a'"
+                         :href="item.href"
+                         :to="item.href"
                          :target="item.target"
               >
                 {{ item.label }}

@@ -6,7 +6,7 @@ export const useLocale = () => {
 
   const locale = ref<Languages>('en');
   const strings = ref(allStrings[locale.value]);
-  const t = (key: PathToStrings) => get(strings.value, key, '');
+  const t = <T = string>(key: PathToStrings) => get<T>(strings.value, key);
 
   return {
     locale,

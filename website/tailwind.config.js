@@ -9,6 +9,9 @@ export default {
       center: true
     },
     extend: {},
+    fontFamily: {
+      sans: ['Work Sans', 'sans-serif'],
+    }
   },
   plugins: [],
 }
