@@ -3,11 +3,12 @@
 import {useToggle} from "@vueuse/core";
 import {useLocale} from "~/hooks/useLocale";
 
+const id = useId();
+const [isOpen, toggle] = useToggle(false);
+
 const {t} = useLocale();
 const items = t<Array<Record<'href' | 'label' | 'target', string>>>('header.links');
 
-const [isOpen, toggle] = useToggle(false);
-const id = useId();
 </script>
 
 <template>

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  Services page
+  <section></section>
 </template>
 
 <style scoped lang="postcss">

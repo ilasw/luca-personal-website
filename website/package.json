@@ -10,9 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.6.0",
     "@vueuse/core": "^10.9.0",
+    "@vueuse/gesture": "^2.0.0",
     "@vueuse/motion": "^2.1.0",
     "nuxt": "^3.11.2",
+    "popmotion": "^11.0.5",
     "radash": "^12.1.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"

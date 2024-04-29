@@ -14,11 +14,10 @@ const {t} = useLocale()
     <Meta name="keywords" content="{{ t('seo.keywords') }}"/>
   </Head>
 
-  <div class="container">
-    <Hero/>
-    <Clients/>
-    <ServiceGrid/>
-  </div>
+  <Hero/>
+  <Clients/>
+  <ServiceGrid/>
+  <div class="mt-[100vh]"></div>
 </template>
 
 <style scoped lang="postcss">
