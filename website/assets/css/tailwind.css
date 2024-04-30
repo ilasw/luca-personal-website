@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply font-sans;
+  letter-spacing: -.025em;
+  scroll-behavior: smooth;
+}
+
+.cta {
+  @apply inline-block font-medium border rounded-full p-4 transition-colors;
+  @apply hover:underline underline-offset-2 hover:border-black;
+}
+
+a:not([class]), .link, .cta {
+  &[target="_blank"]::after {
+    content: " ↗";
+    @apply hover:no-underline;
+  }
+}
+
+@layer utilities {
+  .container {
+    max-width: 92%;
+
+    @screen md {
+      max-width: 88%;
+    }
+  }
+}
