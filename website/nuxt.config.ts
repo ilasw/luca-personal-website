@@ -6,5 +6,8 @@ export default defineNuxtConfig({
       'Work+Sans': [400, 500, 700],
     },
     display: 'swap'
-  }], "@nuxt/image"]
+  }], "@nuxt/image"],
+  routeRules: {
+    '/en': {redirect: '/'},
+  }
 })

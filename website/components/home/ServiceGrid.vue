@@ -38,7 +38,7 @@ const {wrapperEl, element} = useScrollTranslate({
           <div class="grid grid-cols-1 gap-8">
             <template v-for="(service, index) in services" :key="index">
               <div
-                  class="sticky max-w-3xl mx-auto rounded-2xl bg-neutral-50 border-8 border-white px-8 py-10 shadow-neutral-300 shadow-2xl"
+                  class="md:sticky max-w-3xl mx-auto rounded-2xl bg-neutral-50 border-8 border-white px-8 py-10 shadow-neutral-300 shadow-2xl"
                   :style="`top: calc(8rem + ${index}rem)`"
               >
                 <div class="flex flex-row justify-between">
@@ -54,7 +54,7 @@ const {wrapperEl, element} = useScrollTranslate({
                       </li>
                     </ul>
                   </div>
-                  <div class="">
+                  <div class="hidden md:block">
                     <NuxtImg v-if="service.image"
                              :src="service.image"
                              height="250"
@@ -75,7 +75,7 @@ const {wrapperEl, element} = useScrollTranslate({
 
 <style scoped lang="postcss">
 .intro {
-  @apply hidden md:block relative;
+  @apply relative;
   padding-bottom: 15vmax;
   margin-bottom: -15vmax;
 
@@ -85,7 +85,11 @@ const {wrapperEl, element} = useScrollTranslate({
     &-inner {
       @apply font-bold uppercase whitespace-nowrap opacity-20 flex flex-nowrap items-center;
       font-size: 20vw;
-      margin: 5vmax 8vmax 0;
+      margin: 25vmax 8vmax 10vmax;
+
+      @screen md {
+        margin: 5vmax 8vmax 0;
+      }
     }
   }
 }
