@@ -14,4 +14,5 @@ export default defineNuxtConfig({
   routeRules: {
     '/en': {redirect: '/'},
   },
+  devServerHandlers: []
 })
