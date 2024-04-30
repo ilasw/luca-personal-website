@@ -3,6 +3,7 @@ import {useLocale} from "~/hooks/useLocale";
 import Hero from "~/components/home/Hero.vue";
 import Clients from "~/components/home/ClientLogos.vue";
 import ServiceGrid from "~/components/home/ServiceGrid.vue";
+import AboutMe from "~/components/home/AboutMe.vue";
 
 const {t} = useLocale()
 </script>
@@ -17,9 +18,5 @@ const {t} = useLocale()
   <Hero/>
   <Clients/>
   <ServiceGrid/>
-  <div class="mt-[100vh]"></div>
+  <AboutMe/>
 </template>
-
-<style scoped lang="postcss">
-
-</style>

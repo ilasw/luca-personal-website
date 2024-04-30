@@ -12,14 +12,12 @@ const items = t<Array<Record<'href' | 'label' | 'target', string>>>('header.link
 </script>
 
 <template>
-  <header class="sticky top-0 left-0 w-full bg-white py-2.5 border-b border-b-neutral-100">
+  <header class="fixed md:sticky z-50 top-0 left-0 w-full bg-white py-2.5 border-b border-b-neutral-100">
     <div class="container">
-      <div class="flex items-center justify-end md:justify-between">
-        <div class="hidden md:block">
-          <RouterLink class="link text-lg font-medium" to="/">
-            Luca Pagliaro
-          </RouterLink>
-        </div>
+      <div :class="['flex items-center', isOpen? 'justify-end' : 'justify-between']">
+        <RouterLink class="link text-lg font-medium" v-show="!isOpen" to="/">
+          Luca Pagliaro
+        </RouterLink>
         <nav class="px-4 md:px-0">
           <div class="text-right md:hidden">
             <button class="link"

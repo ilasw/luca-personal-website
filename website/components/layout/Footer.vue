@@ -5,8 +5,8 @@ const currentYear = new Date().getFullYear();
 <template>
   <footer>
     <div class="container">
-      <div class="rounded-2xl bg-neutral-800 text-white p-5 mb-4">
-        &copy; {{ currentYear }} Luca Pagliaro
+      <div class="rounded-2xl text-center p-5 mb-4">
+        &copy; {{ currentYear }} Luca Pagliaro - P.IVA 05585830879
       </div>
     </div>
   </footer>

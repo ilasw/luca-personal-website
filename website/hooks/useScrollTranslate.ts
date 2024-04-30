@@ -1,25 +1,19 @@
-import {useElementBounding} from "@vueuse/core";
 import {interpolate} from "popmotion";
 import {useElementTransform} from "@vueuse/motion";
 import {useScroll} from "@vueuse/gesture";
-import type {Ref} from "vue";
 
 type UseScrollTranslateProps = {
-  wrapperEl: Ref<HTMLElement>,
-  element: Ref<HTMLElement>,
   minScrollPercentage?: number,
   maxScrollPercentage?: number
 }
 
 export function useScrollTranslate(props: UseScrollTranslateProps) {
   const {
-    wrapperEl,
-    element,
     minScrollPercentage = 0,
     maxScrollPercentage = 100
   } = props;
-  const elementBounding = useElementBounding(element);
-
+  const wrapperEl = ref<HTMLElement>();
+  const element = ref<HTMLElement>();
   const mapper = interpolate([0, 100], [`${minScrollPercentage}%`, `-${maxScrollPercentage}%`]);
   const {transform} = useElementTransform(element);
 
@@ -37,7 +31,7 @@ export function useScrollTranslate(props: UseScrollTranslateProps) {
       }
   )
 
-  return {element, elementBounding};
+  return {element, wrapperEl};
 }
 
 function calculateScrolledPercentage(element: HTMLElement): number {

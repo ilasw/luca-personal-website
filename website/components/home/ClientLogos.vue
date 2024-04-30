@@ -10,7 +10,7 @@ const images = Object.entries(companies).map(([key, value]) => ({
 </script>
 
 <template>
-  <div class="text-center">
+  <div class="text-center mt-5">
     <h2 class="uppercase text-neutral-400">{{ t('trustedBy.heading') }}</h2>
     <div class="flex justify-center items-center">
       <ul role="list" class="list">

@@ -27,23 +27,34 @@ export const _en = {
     ]
   },
   services: {
-    heading: 'Services',
+    heading: 'My partners hire me for...',
     items: [
       {
+        image: '/images/services/braces.png',
         title: 'Consulting',
-        description: `Help companies to improve their digital products, from the concept to the final release.`
-      },
-      {
-        title: 'Technical interviews',
-        description: `Empower companies to hire top talent and guide developers to ace their front-end web interviews.`,
+        description: `Help companies to improve their digital products, from scratch to the final release.`,
         items: [
-          'Empowering companies to hire best-tier tech talent.',
-          'Guiding developers to ace their front-end web interviews.',
+          'Developing or refactoring digital products from scratch.',
+          'Building integrations with third-party services.'
         ]
       },
       {
-        title: 'Training',
-        description: `I provide training sessions on web development, from the basics to the most advanced topics.`
+        image: '/images/services/keyboard.png',
+        title: 'Education',
+        description: `Teaching in bootcamps, courses, and companies, helping developers to grow their skills.`,
+        items: [
+          'Teaching in bootcamps from scratch to advanced topics.',
+          'Mentoring developers in companies to grow their skills.',
+        ]
+      },
+      {
+        image: '/images/services/more-than.png',
+        title: 'Technical interviews',
+        description: `Empower companies to hire top talent and guide developers to ace their front-end web interviews.`,
+        items: [
+          'Companies: hire the best talent, from job descriptions to final interview.',
+          'Developers: coaching to ace front-end web interviews.',
+        ]
       }
     ]
   },
