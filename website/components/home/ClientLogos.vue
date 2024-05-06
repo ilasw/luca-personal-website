@@ -11,7 +11,7 @@ const images = Object.entries(companies).map(([key, value]) => ({
 
 <template>
   <div class="text-center mt-5">
-    <h2 class="uppercase text-neutral-400">{{ t('trustedBy.heading') }}</h2>
+    <h2 class="uppercase text-neutral-700">{{ t('trustedBy.heading') }}</h2>
     <div class="flex justify-center items-center">
       <ul role="list" class="list">
         <li role="listitem" class="company" v-for="{src, alt} in images">

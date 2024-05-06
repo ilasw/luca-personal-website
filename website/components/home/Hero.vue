@@ -12,9 +12,9 @@ const {t} = useLocale();
           alt="Photo showing Luca Pagliaro with a badge during a conference"
           class="image"
           height="120"
-          loading="lazy"
           width="120"
           src="/images/me/luca-pagliaro-catania.jpeg"
+          preload
       />
       <p class="w-3/4 md:w-7/12 mx-auto font-medium">
         <span class="block headline mb-10 shadow shadow-amber-50">{{ t('hero.headline') }}</span>
@@ -44,7 +44,7 @@ const {t} = useLocale();
 }
 
 .headline {
-  font-size: clamp(1.5rem,2vw, 4rem);
+  font-size: clamp(1.5rem, 2vw, 4rem);
   line-height: 1.2;
 }
 </style>
