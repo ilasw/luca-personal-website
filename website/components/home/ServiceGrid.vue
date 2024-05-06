@@ -49,12 +49,14 @@ const {wrapperEl, element} = useScrollTranslate({
                       <li v-for="item in service.items"
                           class="p-4 bg-white rounded-lg border border-neutral-100 flex gap-4"
                       >
-                        <NuxtImg src="/images/star.svg"
-                                 width="20"
-                                 height="20"
-                                 alt="Star icon"
-                                 role="presentation"
-                                 aria-hidden="true"
+                        <NuxtImg
+                            alt="Star icon"
+                            aria-hidden="true"
+                            class="aspect-square w-5 h-5"
+                            height="20"
+                            role="presentation"
+                            width="20"
+                            src="/images/star.svg"
                         />
                         <span>{{ item }}</span>
                       </li>
