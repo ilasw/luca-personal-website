@@ -21,6 +21,7 @@ const {t} = useLocale();
           <a class="cta"
              href="https://www.linkedin.com/in/lucapagliaro/"
              target="_blank"
+             rel="nofollow noopener noreferrer"
              title="Chat with me on LinkedIn"
              aria-label="Chat with me on LinkedIn"
           >{{ t('hero.cta') }}</a>

@@ -75,7 +75,20 @@ const {wrapperEl, element} = useScrollTranslate({
               </div>
             </template>
           </div>
+
+          <div class="text-center mt-24">
+            <h3 class="text-2xl font-bold max-w-lg mx-auto text-center mb-4">{{ t('services.cta.heading') }}</h3>
+            <a class="cta bg-white"
+               href="https://www.linkedin.com/in/lucapagliaro/"
+               target="_blank"
+               rel="nofollow noopener noreferrer"
+               title="Hire me on LinkedIn"
+               aria-label="Hire me on LinkedIn"
+            >{{ t('services.cta.label') }}</a>
+          </div>
+
         </div>
+
       </div>
     </div>
   </section>

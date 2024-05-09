@@ -56,6 +56,7 @@ export const _en = {
           'Developers: coaching to ace front-end web interviews.',
         ]
       }
-    ]
+    ],
+    cta: {heading: 'Want to collaborate?', label: 'Hire me'}
   },
 }
