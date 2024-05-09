@@ -6,7 +6,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   if (config.public.gtagId) {
     nuxtApp.vueApp.use(VueGtag, {
       config: {
-        id: `${config.public.gtagId}`
+        id: `GTM-WQXMBWR`
       }
     })
   }
