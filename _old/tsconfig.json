@@ -1,7 +1,0 @@
-{
-  "extends": "./.nuxt/tsconfig.json",
-  "types": [
-    "@nuxt/types",
-    "@nuxtjs/i18n",
-  ]
-}
