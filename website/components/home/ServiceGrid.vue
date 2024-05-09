@@ -33,7 +33,7 @@ const {wrapperEl, element} = useScrollTranslate({
       </div>
 
       <div class="container" id="services">
-        <h2 class="text-4xl font-bold max-w-lg mx-auto text-center">{{ t('services.heading') }}</h2>
+        <h2 class="text-4xl lg:text-6xl font-bold max-w-lg mx-auto text-center">{{ t('services.heading') }}</h2>
         <div class="py-20 pb-36 relative">
           <div class="grid grid-cols-1 gap-8">
             <template v-for="(service, index) in services" :key="index">
@@ -76,8 +76,8 @@ const {wrapperEl, element} = useScrollTranslate({
             </template>
           </div>
 
-          <div class="text-center mt-24">
-            <h3 class="text-2xl font-bold max-w-lg mx-auto text-center mb-4">{{ t('services.cta.heading') }}</h3>
+          <div class="mt-24 flex items-center justify-center gap-4">
+            <h3 class="text-2xl lg:text-4xl font-bold inline-block text-center ">{{ t('services.cta.heading') }}</h3>
             <a class="cta bg-white"
                href="https://www.linkedin.com/in/lucapagliaro/"
                target="_blank"
