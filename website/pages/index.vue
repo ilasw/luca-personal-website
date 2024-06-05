@@ -12,6 +12,7 @@ const {t} = useLocale()
   <Head>
     <Title>{{ t('seo.title') }}</Title>
     <Meta name="description" content="{{ t('seo.description') }}"/>
+    <Meta property="og:description" content="{{ t('seo.description') }}"/>
     <Meta name="keywords" content="{{ t('seo.keywords') }}"/>
   </Head>
 

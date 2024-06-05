@@ -11,11 +11,14 @@
 <script setup lang="ts">
 import Header from "~/components/layout/Header.vue";
 import Footer from "~/components/layout/Footer.vue";
+import ogImage from "~/public/images/me/luca-working-bormio.png";
 
 useHead({
   htmlAttrs() {
     return {
       lang: 'en',
+      ogImage: ogImage,
+      twitterCard: 'summary_large_image',
     }
   },
 })
