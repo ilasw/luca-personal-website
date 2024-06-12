@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import Header from "~/components/layout/Header.vue";
 import Footer from "~/components/layout/Footer.vue";
-import ogImage from "~/public/images/me/luca-working-bormio.png";
+import ogImage from "~/public/images/me/luca-working-bormio-og.jpeg";
 import {useLocale} from "~/hooks/useLocale";
 
 const {t} = useLocale();
