@@ -59,4 +59,10 @@ export const _en = {
     ],
     cta: {heading: 'Want to collaborate?', label: 'Hire me'}
   },
+  aboutMe: {
+    heading: 'About me',
+    content: `With over 10 years of experience, I'm a highly skilled developer with a proven track record of delivering
+          successful projects. I'm passionate about clean code, modern technologies, and building applications that are
+          both user-friendly and performant.`
+  },
 }

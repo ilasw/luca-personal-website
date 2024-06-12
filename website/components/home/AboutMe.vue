@@ -1,15 +1,15 @@
 <script setup lang="ts">
+  import {useLocale} from "~/hooks/useLocale";
 
+  const {t} = useLocale()
 </script>
 
 <template>
   <section class="my-40">
     <div class="container">
       <div class="text-center mb-10">
-        <h2 class="text-6xl font-bold mb-4">About me</h2>
-        <p class="mx-auto w-3/4 md:w-1/2 text-lg leading-6">With over 10 years of experience, I'm a highly skilled developer with a proven track record of delivering
-          successful projects. I'm passionate about clean code, modern technologies, and building applications that are
-          both user-friendly and performant.</p>
+        <h2 class="text-6xl font-bold mb-4">{{ t('aboutMe.heading') }}</h2>
+        <p class="mx-auto w-3/4 md:w-1/2 text-lg leading-6">{{t('aboutMe.content')}}</p>
       </div>
 
       <div class="mx-auto w-3/4">
@@ -17,22 +17,34 @@
           <li class="relative">
             <NuxtImg
                 src="/images/me/luca-event.png"
-                alt=""
+                alt="Luca Pagliaro talking about JavaScript best practices"
                 class="image"
+                loading="lazy"
+                width="400"
+                height="400"
+                sizes="400"
             />
           </li>
           <li class="relative">
             <NuxtImg
                 src="/images/me/luca-wordcamp-2019.jpeg"
-                alt=""
+                alt="Luca Pagliaro talking at WordCamp Catania 2019"
                 class="image"
+                loading="lazy"
+                width="400"
+                height="400"
+                sizes="400"
             />
           </li>
           <li class="relative">
             <NuxtImg
                 src="/images/me/luca-working-bormio.png"
-                alt=""
+                alt="Luca Pagliaro working remote from Bormio, Italy"
                 class="image"
+                loading="lazy"
+                width="400"
+                height="400"
+                sizes="400"
             />
           </li>
         </ul>
