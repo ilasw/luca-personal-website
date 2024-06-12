@@ -15,6 +15,7 @@ const {t} = useLocale();
           width="120"
           src="/images/me/luca-pagliaro-catania.jpeg"
           sizes="120px"
+          format="webp,jpg"
       />
       <p class="w-3/4 md:w-7/12 mx-auto font-medium">
         <span class="block headline mb-10 shadow shadow-amber-50">{{ t('hero.headline') }}</span>

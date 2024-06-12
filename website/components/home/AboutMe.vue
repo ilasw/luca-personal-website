@@ -23,6 +23,7 @@
                 width="400"
                 height="400"
                 sizes="400"
+                format="webp,png"
             />
           </li>
           <li class="relative">
@@ -34,6 +35,7 @@
                 width="400"
                 height="400"
                 sizes="400"
+                format="webp,png"
             />
           </li>
           <li class="relative">
@@ -45,6 +47,7 @@
                 width="400"
                 height="400"
                 sizes="400"
+                format="webp,png"
             />
           </li>
         </ul>
