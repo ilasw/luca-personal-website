@@ -26,9 +26,6 @@ dependencies:
   vue:
     specifier: ^3.4.21
     version: 3.4.27
-  vue-gtag:
-    specifier: ^2.0.1
-    version: 2.0.1(vue@3.4.27)
   vue-router:
     specifier: ^4.3.0
     version: 4.3.2(vue@3.4.27)
@@ -7603,14 +7600,6 @@ packages:
 
   /vue-devtools-stub@0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
-    dev: false
-
-  /vue-gtag@2.0.1(vue@3.4.27):
-    resolution: {integrity: sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      vue: 3.4.27
     dev: false
 
   /vue-observe-visibility@2.0.0-alpha.1(vue@3.4.27):

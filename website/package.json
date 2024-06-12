@@ -17,7 +17,6 @@
     "nuxt": "^3.11.2",
     "radash": "^12.1.0",
     "vue": "^3.4.21",
-    "vue-gtag": "^2.0.1",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
