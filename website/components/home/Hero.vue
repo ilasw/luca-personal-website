@@ -18,7 +18,7 @@ const {t} = useLocale();
           format="webp,jpg"
       />
       <p class="w-3/4 md:w-7/12 mx-auto font-medium">
-        <span class="block headline mb-10 shadow shadow-amber-50">{{ t('hero.headline') }}</span>
+        <h2 class="block text-balance headline mb-10 shadow shadow-amber-50">{{ t('hero.headline') }}</h2>
         <span class="block">
           <a class="cta"
              href="https://www.linkedin.com/in/lucapagliaro/"

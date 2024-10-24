@@ -10,7 +10,7 @@ export default {
     },
     extend: {},
     fontFamily: {
-      sans: ['Work Sans', 'sans-serif'],
+      sans: ['Work Sans', "Helvetica", "Arial", 'sans-serif'],
     }
   },
   plugins: [],

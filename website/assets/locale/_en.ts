@@ -1,8 +1,8 @@
 export const _en = {
   seo: {
-    title: 'Luca Pagliaro - Senior Web Developer - Consultant & Mentor',
-    description: `Luca Pagliaro is a Senior Web Developer, Consultant & Mentor with a focus for continuous growth & delivering exceptional results.`,
-    keywords: 'Luca Pagliaro, Senior Web Developer, Consultant, Mentor, Continuous Growth, Digital products'
+    title: 'Luca Pagliaro - Senior Software Engineer - Consultant & Mentor',
+    description: `Luca Pagliaro is a Senior Software Engineer, Consultant & Mentor with a focus for continuous growth & delivering exceptional results. Currently based in Catania (Italy).`,
+    keywords: 'Luca Pagliaro, Senior Software Engineer, Consultant, Mentor, Continuous Growth, Digital products'
   },
   header: {
     name: 'Luca Pagliaro',
@@ -13,7 +13,7 @@ export const _en = {
     ]
   },
   hero: {
-    title: 'Luca Pagliaro',
+    title: 'Luca Pagliaro, Software Engineer based in Catania (Italy)',
     headline: `A passionate web developer with a focus for continuous growth & delivering
         exceptional results.`,
     cta: `Let's connect`
@@ -27,12 +27,12 @@ export const _en = {
     ]
   },
   services: {
-    heading: 'My partners hire me for...',
+    heading: 'What I usually do',
     items: [
       {
         image: '/images/services/braces.png',
-        title: 'Consulting',
-        description: `Help companies to improve their digital products, from scratch to the final release.`,
+        title: 'Development',
+        description: `Improve codebases or build digital products from scratch.`,
         items: [
           'Developing or refactoring digital products from scratch.',
           'Building integrations with third-party services.'

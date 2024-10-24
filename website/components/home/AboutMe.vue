@@ -9,7 +9,7 @@
     <div class="container">
       <div class="text-center mb-10">
         <h2 class="text-6xl font-bold mb-4">{{ t('aboutMe.heading') }}</h2>
-        <p class="mx-auto w-3/4 md:w-1/2 text-lg leading-6">{{t('aboutMe.content')}}</p>
+        <p class="mx-auto w-3/4 lg:w-1/2 text-lg leading-6 font-light text-balance">{{t('aboutMe.content')}}</p>
       </div>
 
       <div class="mx-auto w-3/4">
